@@ -12,8 +12,8 @@ build-mindetach-module = true
 [YouTube]
 enabled = true                                                        # add 'enabled = false' key to entries to not build them
 build-mode = "both"                                                   # 'both', 'apk' or 'module'
-excluded-patches = "debugging"                                        # whitespace seperated list of patches to exclude
-included-patches = "theme"                                            # whitespace seperated list of patches to include
+excluded-patches = "debugging theme custom-branding premium-heading"                                        # whitespace seperated list of patches to exclude
+included-patches = ""                                            # whitespace seperated list of patches to include
 version = "auto"                                                      # 'auto', 'latest' or a custom one like '17.40.41'
 exclusive-patches = false                                             # excludes all patches by default
 microg-patch = "microg-support"
@@ -25,7 +25,7 @@ rip-libs = true
 [Music-arm64]
 build-mode = "both"
 app-name = "Music"
-excluded-patches = ""
+excluded-patches = "compact-header tasteBuilder-remover"
 included-patches = ""
 version = "auto"
 microg-patch = "music-microg-support"
